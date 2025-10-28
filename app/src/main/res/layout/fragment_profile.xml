@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:padding="30dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img"/>
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:background="@drawable/text_bag"
+        android:padding="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"/>
+
+    <TextView
+        android:id="@+id/age_profile"
+        android:background="@drawable/text_bag"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="age"/>
+
+    <TextView
+        android:id="@+id/gender_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_bag"
+        android:padding="10dp"
+        android:hint="gender"/>
+
+    <TextView
+        android:id="@+id/email_profile"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bag"
+        android:padding="10dp"
+        android:hint="email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to logout?"
+        android:textColor="@color/black"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/logout_profile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/orange"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+</LinearLayout>

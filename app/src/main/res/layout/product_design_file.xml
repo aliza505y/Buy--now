@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/edittext_bg"
+    android:layout_margin="13dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image_of_product_rv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_of_product_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_of_product_rv"
+        app:layout_constraintTop_toTopOf="@+id/image_of_product_rv" />
+
+    <TextView
+        android:id="@+id/color_of_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="colour"
+        app:layout_constraintStart_toStartOf="@id/name_of_product_rv"
+        app:layout_constraintTop_toBottomOf="@id/name_of_product_rv"/>
+
+    <TextView
+        android:id="@+id/price_of_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="price"
+        app:layout_constraintStart_toStartOf="@id/color_of_product"
+        app:layout_constraintTop_toBottomOf="@id/color_of_product"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

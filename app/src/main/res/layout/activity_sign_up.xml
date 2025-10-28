@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".buyer.SignUpActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:text="Create Account to buy"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="Fill all fields below"/>
+
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="20dp"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"/>
+
+
+    <EditText
+        android:id="@+id/age_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"/>
+
+    <EditText
+        android:id="@+id/gender_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:layout_margin="20dp"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"/>
+
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_margin="20dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"/>
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="20dp"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"/>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cornerRadius="12dp"
+        android:text="Sign Up"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/already_have_an_account"
+        android:text="Already have an account ?"
+        android:textSize="15sp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>
